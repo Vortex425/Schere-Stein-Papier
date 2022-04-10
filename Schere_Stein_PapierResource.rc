@@ -1,0 +1,7 @@
+PNGTitel RCDATA "Resourcen\\Titel.png"
+JPGBack RCDATA "Resourcen\\white_background_dents_bumps_texture_69592_1920x1080.jpg"
+GIFWin RCDATA "Resourcen\\Win.gif"
+GIFLose RCDATA "Resourcen\\Lose.gif"
+Sound1Win WAVE "Resourcen\\456966__funwithsound__success-fanfare-trumpets.wav"
+Sound2Lose Wave "Resourcen\\533034__evretro__8-bit-game-over-sound-tune.wav"
+Sound3Neust WAVE "Resourcen\\69698__lukaso__slot-machine-insert-3-coins-and-spin.wav"
