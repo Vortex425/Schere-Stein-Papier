@@ -79,7 +79,11 @@ object TStart: TTStart
       'm'#246'chtest. W'#228'hle eines aus und klicke auf '
       '"Best'#228'tigen". Es werden 10 Runden gespielt. '
       'Anschlie'#223'end kannst du das Spiel neustarten. '
-      'Viel Spa'#223'!')
+      'Viel Spa'#223'!'
+      ''
+      'Ach ja ich habe noch ein "Supersymbol" '
+      'verteckt. Wenn du es findest hast du sofort '
+      'gewonnen!')
     ParentFont = False
     ScrollBars = ssVertical
     TabOrder = 2

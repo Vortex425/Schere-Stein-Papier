@@ -145,6 +145,18 @@
             <ResourceType>WAVE</ResourceType>
             <ResourceId>Sound3Neust</ResourceId>
         </RcItem>
+        <RcItem Include="Resourcen\Papier.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>PngPAPIER</ResourceId>
+        </RcItem>
+        <RcItem Include="Resourcen\Schere.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>PngSCHERE</ResourceId>
+        </RcItem>
+        <RcItem Include="Resourcen\Stein.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>PngSTEIN</ResourceId>
+        </RcItem>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>
@@ -197,7 +209,25 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
+                <DeployFile LocalName="Resourcen\Stein.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
                 <DeployFile LocalName="Resourcen\Lose.gif" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Resourcen\Papier.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Resourcen\Schere.png" Configuration="Debug" Class="ProjectFile">
                     <Platform Name="Win32">
                         <RemoteDir>.\</RemoteDir>
                         <Overwrite>true</Overwrite>

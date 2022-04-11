@@ -1,7 +1,5 @@
 program Schere_Stein_Papier;
 
-
-
 {$R *.dres}
 
 uses
@@ -22,4 +20,5 @@ begin
   Application.CreateForm(TTWin, TWin);
   Application.CreateForm(TTLose, TLose);
   Application.Run;
+
 end.

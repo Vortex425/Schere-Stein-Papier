@@ -39,9 +39,7 @@ end;
 
 procedure TTStart.BtnStartClick(Sender: TObject);
 begin
-TStart.Free;
 TStart.Close;
-TMain.Show;
 end;
 
 procedure TTStart.FormCreate(Sender: TObject);

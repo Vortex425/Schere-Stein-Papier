@@ -1,34 +1,42 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
 	<Transactions>
-    <Transaction>1899.12.30 00:00:00.000.891,C:\Users\Anwender\Desktop\Schule\SBSZ\Klasse 11\Programmieren\Programme\Schere Stein Papier\Win.dfm=C:\Users\Anwender\Desktop\Schule\SBSZ\Klasse 11\Programmieren\Programme\Schere Stein Papier\Lose.dfm</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.315,=C:\Users\Anwender\Desktop\Schule\SBSZ\Klasse 11\Programmieren\Programme\Schere Stein Papier\Resourcen\533034__evretro__8-bit-game-over-sound-tune.wav</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.422,C:\Users\Anwender\Desktop\Schule\SBSZ\Klasse 11\Programmieren\Programme\Schere Stein Papier\Unit1.dfm=C:\Users\Anwender\Desktop\Schule\SBSZ\Klasse 11\Programmieren\Programme\Schere Stein Papier\Win.dfm</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.769,C:\Users\Anwender\Desktop\Schule\SBSZ\Klasse 11\Programmieren\Programme\Schere Stein Papier\Schere_Stein_Papier.dproj=C:\Users\Anwender\Desktop\Schule\SBSZ\Klasse 11\Programmieren\Project1.dproj</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.056,=C:\Users\Anwender\Desktop\Schule\SBSZ\Klasse 11\Programmieren\Programme\Schere Stein Papier\Resourcen\Lose.gif</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.813,=C:\Users\Anwender\Desktop\Schule\SBSZ\Klasse 11\Programmieren\Programme\Schere Stein Papier\Resourcen\456966__funwithsound__success-fanfare-trumpets.wav</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.738,=C:\Users\Anwender\Desktop\Schule\SBSZ\Klasse 11\Programmieren\Unit1.pas</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.823,=C:\Users\Anwender\Desktop\Schule\SBSZ\Klasse 11\Programmieren\Programme\Schere Stein Papier\Resourcen\Win.gif</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.241,=C:\Users\Anwender\Desktop\Schule\SBSZ\Klasse 11\Programmieren\Programme\Schere Stein Papier\Resourcen\69698__lukaso__slot-machine-insert-3-coins-and-spin.wav</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.602,C:\Users\Anwender\Desktop\Schule\SBSZ\Klasse 11\Programmieren\Programme\Schere Stein Papier\Start.pas=C:\Users\Anwender\Desktop\Schule\SBSZ\Klasse 11\Programmieren\Programme\Schere Stein Papier\Unit2.pas</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.933,=C:\Users\Anwender\Desktop\Schule\SBSZ\Klasse 11\Programmieren\Programme\Schere Stein Papier\Win.pas</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.250,C:\Users\Anwender\Desktop\Schule\SBSZ\Klasse 11\Programmieren\Programme\Schere Stein Papier\Unit1.dfm=C:\Users\Anwender\Desktop\Schule\SBSZ\Klasse 11\Programmieren\Programme\Schere Stein Papier\Lose.dfm</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.535,C:\Users\Anwender\Desktop\Schule\SBSZ\Klasse 11\Programmieren\Programme\Schere Stein Papier\Unit1.dfm=C:\Users\Anwender\Desktop\Schule\SBSZ\Klasse 11\Programmieren\Programme\Schere Stein Papier\Lose.dfm</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.891,C:\Users\Anwender\Desktop\Schule\SBSZ\Klasse 11\Programmieren\Programme\Schere Stein Papier\Win.pas=C:\Users\Anwender\Desktop\Schule\SBSZ\Klasse 11\Programmieren\Programme\Schere Stein Papier\Lose.pas</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.535,C:\Users\Anwender\Desktop\Schule\SBSZ\Klasse 11\Programmieren\Programme\Schere Stein Papier\Unit1.pas=C:\Users\Anwender\Desktop\Schule\SBSZ\Klasse 11\Programmieren\Programme\Schere Stein Papier\Lose.pas</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.099,C:\Users\Anwender\Desktop\Schule\SBSZ\Klasse 11\Programmieren\Programme\Schere Stein Papier\Main.dfm=C:\Users\Anwender\Desktop\Schule\SBSZ\Klasse 11\Programmieren\Unit1.dfm</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.608,=C:\Users\Anwender\Desktop\Schule\SBSZ\Klasse 11\Programmieren\Programme\Schere Stein Papier\Resourcen\white_background_dents_bumps_texture_69592_1920x1080.jpg</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.422,C:\Users\Anwender\Desktop\Schule\SBSZ\Klasse 11\Programmieren\Programme\Schere Stein Papier\Unit1.pas=C:\Users\Anwender\Desktop\Schule\SBSZ\Klasse 11\Programmieren\Programme\Schere Stein Papier\Win.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.371,=C:\Users\Anwender\Desktop\Schule\SBSZ\Klasse 11\Programmieren\Programme\Schere Stein Papier\Resourcen\Schere.png</Transaction>
     <Transaction>1899.12.30 00:00:00.000.099,C:\Users\Anwender\Desktop\Schule\SBSZ\Klasse 11\Programmieren\Programme\Schere Stein Papier\Main.pas=C:\Users\Anwender\Desktop\Schule\SBSZ\Klasse 11\Programmieren\Unit1.pas</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.675,=C:\Users\Anwender\Desktop\Schule\SBSZ\Klasse 11\Programmieren\Programme\Schere Stein Papier\Resourcen\Titel.png</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.049,=C:\Users\Anwender\Desktop\Schule\SBSZ\Klasse 11\Programmieren\Programme\Schere Stein Papier\Resourcen\Background.jpg</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.047,=C:\Users\Anwender\Desktop\Schule\SBSZ\Klasse 11\Programmieren\Programme\Schere Stein Papier\Resourcen\Background.png</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.083,=C:\Users\Anwender\Desktop\Schule\SBSZ\Klasse 11\Programmieren\Programme\Schere Stein Papier\Unit2.pas</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.537,=C:\Users\Anwender\Desktop\Schule\SBSZ\Klasse 11\Programmieren\Programme\Schere Stein Papier\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.813,=C:\Users\Anwender\Desktop\Schule\SBSZ\Klasse 11\Programmieren\Programme\Schere Stein Papier\Resourcen\456966__funwithsound__success-fanfare-trumpets.wav</Transaction>
     <Transaction>1899.12.30 00:00:00.000.250,C:\Users\Anwender\Desktop\Schule\SBSZ\Klasse 11\Programmieren\Programme\Schere Stein Papier\Unit1.pas=C:\Users\Anwender\Desktop\Schule\SBSZ\Klasse 11\Programmieren\Programme\Schere Stein Papier\Lose.pas</Transaction>
     <Transaction>1899.12.30 00:00:00.000.637,=C:\Users\Anwender\Desktop\Schule\SBSZ\Klasse 11\Programmieren\Programme\Schere Stein Papier\Unit1.pas</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.422,C:\Users\Anwender\Desktop\Schule\SBSZ\Klasse 11\Programmieren\Programme\Schere Stein Papier\Unit1.pas=C:\Users\Anwender\Desktop\Schule\SBSZ\Klasse 11\Programmieren\Programme\Schere Stein Papier\Win.pas</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.539,=C:\Users\Anwender\Downloads\Titel.png</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.161,=C:\Users\Anwender\Desktop\Schule\SBSZ\Klasse 11\Programmieren\Programme\Schere Stein Papier\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.685,C:\Users\Anwender\Desktop\Schule\SBSZ\Klasse 11\Programmieren\Programme\Schere Stein Papier\Unit1.pas=C:\Users\Anwender\Desktop\Schule\SBSZ\Klasse 11\Programmieren\Programme\Schere Stein Papier\Secret.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.535,C:\Users\Anwender\Desktop\Schule\SBSZ\Klasse 11\Programmieren\Programme\Schere Stein Papier\Unit1.pas=C:\Users\Anwender\Desktop\Schule\SBSZ\Klasse 11\Programmieren\Programme\Schere Stein Papier\Lose.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.435,=C:\Users\Anwender\Desktop\Schule\SBSZ\Klasse 11\Programmieren\Programme\Schere Stein Papier\Resourcen\JansFupilz_x264.mkv</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.232,C:\Users\Anwender\Desktop\Schule\SBSZ\Klasse 11\Programmieren\Programme\Schere Stein Papier\Resourcen\JansFupilz_x264.mkv=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.241,=C:\Users\Anwender\Desktop\Schule\SBSZ\Klasse 11\Programmieren\Programme\Schere Stein Papier\Resourcen\69698__lukaso__slot-machine-insert-3-coins-and-spin.wav</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.602,C:\Users\Anwender\Desktop\Schule\SBSZ\Klasse 11\Programmieren\Programme\Schere Stein Papier\Start.pas=C:\Users\Anwender\Desktop\Schule\SBSZ\Klasse 11\Programmieren\Programme\Schere Stein Papier\Unit2.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.891,C:\Users\Anwender\Desktop\Schule\SBSZ\Klasse 11\Programmieren\Programme\Schere Stein Papier\Win.dfm=C:\Users\Anwender\Desktop\Schule\SBSZ\Klasse 11\Programmieren\Programme\Schere Stein Papier\Lose.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.099,C:\Users\Anwender\Desktop\Schule\SBSZ\Klasse 11\Programmieren\Programme\Schere Stein Papier\Main.dfm=C:\Users\Anwender\Desktop\Schule\SBSZ\Klasse 11\Programmieren\Unit1.dfm</Transaction>
     <Transaction>1899.12.30 00:00:00.000.602,C:\Users\Anwender\Desktop\Schule\SBSZ\Klasse 11\Programmieren\Programme\Schere Stein Papier\Start.dfm=C:\Users\Anwender\Desktop\Schule\SBSZ\Klasse 11\Programmieren\Programme\Schere Stein Papier\Unit2.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.738,=C:\Users\Anwender\Desktop\Schule\SBSZ\Klasse 11\Programmieren\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.769,C:\Users\Anwender\Desktop\Schule\SBSZ\Klasse 11\Programmieren\Programme\Schere Stein Papier\Schere_Stein_Papier.dproj=C:\Users\Anwender\Desktop\Schule\SBSZ\Klasse 11\Programmieren\Project1.dproj</Transaction>
     <Transaction>1899.12.30 00:00:00.000.023,=C:\Users\Anwender\Desktop\Schule\SBSZ\Klasse 11\Programmieren\Programme\Schere Stein Papier\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.315,=C:\Users\Anwender\Desktop\Schule\SBSZ\Klasse 11\Programmieren\Programme\Schere Stein Papier\Resourcen\533034__evretro__8-bit-game-over-sound-tune.wav</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.422,C:\Users\Anwender\Desktop\Schule\SBSZ\Klasse 11\Programmieren\Programme\Schere Stein Papier\Unit1.dfm=C:\Users\Anwender\Desktop\Schule\SBSZ\Klasse 11\Programmieren\Programme\Schere Stein Papier\Win.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.685,C:\Users\Anwender\Desktop\Schule\SBSZ\Klasse 11\Programmieren\Programme\Schere Stein Papier\Unit1.dfm=C:\Users\Anwender\Desktop\Schule\SBSZ\Klasse 11\Programmieren\Programme\Schere Stein Papier\Secret.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.250,C:\Users\Anwender\Desktop\Schule\SBSZ\Klasse 11\Programmieren\Programme\Schere Stein Papier\Unit1.dfm=C:\Users\Anwender\Desktop\Schule\SBSZ\Klasse 11\Programmieren\Programme\Schere Stein Papier\Lose.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.056,=C:\Users\Anwender\Desktop\Schule\SBSZ\Klasse 11\Programmieren\Programme\Schere Stein Papier\Resourcen\Lose.gif</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.049,=C:\Users\Anwender\Desktop\Schule\SBSZ\Klasse 11\Programmieren\Programme\Schere Stein Papier\Resourcen\Background.jpg</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.416,=C:\Users\Anwender\Desktop\Schule\SBSZ\Klasse 11\Programmieren\Programme\Schere Stein Papier\Resourcen\Stein.png</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.083,=C:\Users\Anwender\Desktop\Schule\SBSZ\Klasse 11\Programmieren\Programme\Schere Stein Papier\Unit2.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.608,=C:\Users\Anwender\Desktop\Schule\SBSZ\Klasse 11\Programmieren\Programme\Schere Stein Papier\Resourcen\white_background_dents_bumps_texture_69592_1920x1080.jpg</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.047,=C:\Users\Anwender\Desktop\Schule\SBSZ\Klasse 11\Programmieren\Programme\Schere Stein Papier\Resourcen\Background.png</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.539,=C:\Users\Anwender\Downloads\Titel.png</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.675,=C:\Users\Anwender\Desktop\Schule\SBSZ\Klasse 11\Programmieren\Programme\Schere Stein Papier\Resourcen\Titel.png</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.537,=C:\Users\Anwender\Desktop\Schule\SBSZ\Klasse 11\Programmieren\Programme\Schere Stein Papier\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.347,=C:\Users\Anwender\Desktop\Schule\SBSZ\Klasse 11\Programmieren\Programme\Schere Stein Papier\Resourcen\Papier.png</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.535,C:\Users\Anwender\Desktop\Schule\SBSZ\Klasse 11\Programmieren\Programme\Schere Stein Papier\Unit1.dfm=C:\Users\Anwender\Desktop\Schule\SBSZ\Klasse 11\Programmieren\Programme\Schere Stein Papier\Lose.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.891,C:\Users\Anwender\Desktop\Schule\SBSZ\Klasse 11\Programmieren\Programme\Schere Stein Papier\Win.pas=C:\Users\Anwender\Desktop\Schule\SBSZ\Klasse 11\Programmieren\Programme\Schere Stein Papier\Lose.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.933,=C:\Users\Anwender\Desktop\Schule\SBSZ\Klasse 11\Programmieren\Programme\Schere Stein Papier\Win.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.823,=C:\Users\Anwender\Desktop\Schule\SBSZ\Klasse 11\Programmieren\Programme\Schere Stein Papier\Resourcen\Win.gif</Transaction>
   </Transactions>
 </BorlandProject>

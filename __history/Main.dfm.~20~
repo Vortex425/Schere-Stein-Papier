@@ -1,0 +1,183 @@
+object TMain: TTMain
+  Left = 0
+  Top = 0
+  Caption = 'Schere | Stein | Papier'
+  ClientHeight = 336
+  ClientWidth = 755
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poDesktopCenter
+  OnActivate = FormActivate
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  PixelsPerInch = 96
+  TextHeight = 13
+  object ImgBackground: TImage
+    Left = 0
+    Top = 0
+    Width = 755
+    Height = 336
+    Align = alClient
+    ExplicitLeft = 352
+    ExplicitTop = 176
+    ExplicitWidth = 105
+    ExplicitHeight = 105
+  end
+  object ImgCPU: TImage
+    Left = 88
+    Top = 144
+    Width = 105
+    Height = 105
+    Center = True
+    Proportional = True
+  end
+  object ImgSpieler: TImage
+    Left = 424
+    Top = 144
+    Width = 105
+    Height = 105
+    Center = True
+    Proportional = True
+  end
+  object LblCPU: TLabel
+    Left = 120
+    Top = 104
+    Width = 33
+    Height = 23
+    Caption = 'CPU'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -19
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object LblSpieler: TLabel
+    Left = 449
+    Top = 104
+    Width = 57
+    Height = 23
+    Caption = 'Spieler'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -19
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object LblPunktzCPU: TLabel
+    Left = 93
+    Top = 288
+    Width = 80
+    Height = 16
+    Caption = 'Punktzahl: 0'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object LblPunktzSpieler: TLabel
+    Left = 433
+    Top = 288
+    Width = 80
+    Height = 16
+    Caption = 'Punktzahl: 0'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object LblStatus: TLabel
+    Left = 272
+    Top = 72
+    Width = 5
+    Height = 21
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -17
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object ImgTitel: TImage
+    Left = 150
+    Top = 8
+    Width = 467
+    Height = 33
+  end
+  object LblCountdown: TLabel
+    Left = 304
+    Top = 176
+    Width = 10
+    Height = 42
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -35
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Auswahl: TRadioGroup
+    Left = 620
+    Top = 128
+    Width = 96
+    Height = 121
+    Caption = '&Auswahl'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    Items.Strings = (
+      'Stein'
+      'Schere'
+      'Papier')
+    ParentFont = False
+    TabOrder = 0
+  end
+  object BtnStart: TButton
+    Left = 641
+    Top = 285
+    Width = 75
+    Height = 25
+    Caption = 'Start'
+    Default = True
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 1
+    OnClick = BtnStartClick
+  end
+  object Panel1: TPanel
+    Left = 620
+    Top = 252
+    Width = 96
+    Height = 27
+    Hint = 'Der Nieser'
+    BevelOuter = bvNone
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 2
+  end
+  object MediaPlayer1: TMediaPlayer
+    Left = 344
+    Top = 232
+    Width = 253
+    Height = 30
+    DoubleBuffered = True
+    ParentDoubleBuffered = False
+    TabOrder = 3
+  end
+end

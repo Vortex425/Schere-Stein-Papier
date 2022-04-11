@@ -40,7 +40,7 @@ end;
 procedure TTLose.BtnNeustartClick(Sender: TObject);
 begin
   PlaySound('Sound3Neust', 0, SND_RESOURCE or SND_NODEFAULT);
-  TLose.Free;
+  TMain.Reset;
   TLose.Close;
   TMain.Show;
 end;

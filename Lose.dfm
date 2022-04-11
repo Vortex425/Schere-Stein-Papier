@@ -40,7 +40,7 @@ object TLose: TTLose
     Top = 256
     Width = 75
     Height = 25
-    Caption = 'Insert Coin'
+    Caption = 'Insert Coins'
     TabOrder = 1
     OnClick = BtnNeustartClick
   end

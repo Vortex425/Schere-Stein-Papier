@@ -39,8 +39,8 @@ end;
 
 procedure TTWin.BtnNeustartClick(Sender: TObject);
 begin
+  TMain.Reset;
   TMain.Show;
-  TWin.Free;
   TWin.Close;
 end;
 
