@@ -8,3 +8,5 @@ Sound3Neust WAVE "Resourcen\\69698__lukaso__slot-machine-insert-3-coins-and-spin
 PngPAPIER RCDATA "Resourcen\\Papier.png"
 PngSCHERE RCDATA "Resourcen\\Schere.png"
 PngSTEIN RCDATA "Resourcen\\Stein.png"
+Musik RCDATA "Resourcen\\bensound-jazzyfrenchy.mp3"
+MP4Secret RCDATA "Resourcen\\Secret.mp4"

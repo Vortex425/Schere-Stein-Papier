@@ -233,13 +233,13 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="Resourcen\Titel.png" Configuration="Debug" Class="ProjectFile">
+                <DeployFile LocalName="Resourcen\Win.gif" Configuration="Debug" Class="ProjectFile">
                     <Platform Name="Win32">
                         <RemoteDir>.\</RemoteDir>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="Resourcen\Win.gif" Configuration="Debug" Class="ProjectFile">
+                <DeployFile LocalName="Resourcen\Titel.png" Configuration="Debug" Class="ProjectFile">
                     <Platform Name="Win32">
                         <RemoteDir>.\</RemoteDir>
                         <Overwrite>true</Overwrite>
