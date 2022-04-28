@@ -25,8 +25,8 @@ type
     LblCountdown: TLabel;
     Panel1: TPanel;
     HintergrundMedia: TMediaPlayer;
-    SecretMedia: TMediaPlayer;
     CheckMusik: TCheckBox;
+    SecretMedia: TWindowsMediaPlayer;
     procedure FormDestroy(Sender: TObject);
     procedure BtnStartClick(Sender: TObject);
     procedure FormCreate(Sender: TObject);
@@ -38,6 +38,7 @@ type
     procedure Hintergrundmusik;
     procedure CheckMusikClick(Sender: TObject);
     procedure Panel1Click(Sender: TObject);
+    procedure SecretMediaPlayStateChange(ASender: TObject; NewState: Integer);
   private
     { Private-Deklarationen }
   public
@@ -169,6 +170,16 @@ begin
   LblCountdown.Caption := '';
 end;
 
+procedure TTMain.SecretMediaPlayStateChange(ASender: TObject;
+  NewState: Integer);
+begin
+  if SecretMedia.playState = 8 then
+  begin
+    TMain.Hide;
+    TWin.Show;
+  end;
+end;
+
 procedure TTMain.Spielablauf;
 begin
   Stein := TPngImage.Create;
@@ -275,21 +286,25 @@ end;
 
 procedure TTMain.Panel1Click(Sender: TObject);
 begin
+  BtnStart.Enabled := false;
+  HintergrundMedia.Notify := false;
+  HintergrundMedia.Wait := false;
+  HintergrundMedia.Pause;
   try
-    RS := TResourceStream.Create(HInstance, 'AVISecret', RT_RCDATA);
-    RS.SaveToFile(TP + 'JanFupilz.avi');
-    SecretMedia.Enabled := true;
-    SecretMedia.FileName := TP + 'JanFupilz.avi';
-    SecretMedia.Open;
-    SecretMedia.Play;
-    SecretMedia.Notify := true;
+    RS := TResourceStream.Create(HInstance, 'MP4Secret', RT_RCDATA);
+    RS.SaveToFile(TP + 'Secret.mp4');
   finally
-    RS.Free
+    RS.Free;
   end;
+  SecretMedia.Visible := true;
+  SecretMedia.URL := TP + 'Secret.mp4';
+  SecretMedia.Controls.Play;
 end;
 
 procedure TTMain.Reset;
 begin
+  SecretMedia.Visible := false;
+  SecretMedia.close;
   HintergrundMedia.Rewind;
   HintergrundMedia.Notify := true;
   TRadioButton(Auswahl.Controls[0]).Checked := false;

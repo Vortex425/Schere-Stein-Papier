@@ -23,7 +23,7 @@ type
     ImgTitel: TImage;
     ImgBackground: TImage;
     LblCountdown: TLabel;
-    Panel1: TPanel;
+    PnlSecret: TPanel;
     HintergrundMedia: TMediaPlayer;
     CheckMusik: TCheckBox;
     SecretMedia: TWindowsMediaPlayer;
@@ -37,7 +37,7 @@ type
     procedure HintergrundMediaNotify(Sender: TObject);
     procedure Hintergrundmusik;
     procedure CheckMusikClick(Sender: TObject);
-    procedure Panel1Click(Sender: TObject);
+    procedure PnlSecretClick(Sender: TObject);
     procedure SecretMediaPlayStateChange(ASender: TObject; NewState: Integer);
   private
     { Private-Deklarationen }
@@ -284,8 +284,9 @@ begin
   HintergrundMedia.Notify := true;
 end;
 
-procedure TTMain.Panel1Click(Sender: TObject);
+procedure TTMain.PnlSecretClick(Sender: TObject);
 begin
+  PnlSecret.Enabled := false;
   BtnStart.Enabled := false;
   HintergrundMedia.Notify := false;
   HintergrundMedia.Wait := false;
@@ -303,13 +304,12 @@ end;
 
 procedure TTMain.Reset;
 begin
+  PnlSecret.Enabled := true;
   SecretMedia.Visible := false;
   SecretMedia.close;
   HintergrundMedia.Rewind;
   HintergrundMedia.Notify := true;
-  TRadioButton(Auswahl.Controls[0]).Checked := false;
-  TRadioButton(Auswahl.Controls[1]).Checked := false;
-  TRadioButton(Auswahl.Controls[2]).Checked := false;
+  BtnStart.Enabled := true;
   LblStatus.Caption := '';
   LblPunktzCPU.Caption := 'Punktzahl: 0';
   LblPunktzSpieler.Caption := 'Punktzahl: 0';

@@ -24,10 +24,9 @@ type
     ImgBackground: TImage;
     LblCountdown: TLabel;
     Panel1: TPanel;
-    MediaPlayerSecret: TWindowsMediaPlayer;
-    MediaPlayerBackground: TWindowsMediaPlayer;
-    BtnMusik: TButton;
     HintergrundMedia: TMediaPlayer;
+    CheckMusik: TCheckBox;
+    SecretMedia: TWindowsMediaPlayer;
     procedure FormDestroy(Sender: TObject);
     procedure BtnStartClick(Sender: TObject);
     procedure FormCreate(Sender: TObject);
@@ -35,15 +34,11 @@ type
     procedure Spielablauf;
     procedure FormActivate(Sender: TObject);
     procedure Reset;
-    procedure Button1Click(Sender: TObject);
-    procedure Panel1Click(Sender: TObject);
-    procedure MediaPlayerSecretPlayStateChange(ASender: TObject;
-      NewState: Integer);
-    procedure MediaPlayerBackgroundPlayStateChange(ASender: TObject;
-      NewState: Integer);
-    procedure BtnMusikClick(Sender: TObject);
     procedure HintergrundMediaNotify(Sender: TObject);
     procedure Hintergrundmusik;
+    procedure CheckMusikClick(Sender: TObject);
+    procedure Panel1Click(Sender: TObject);
+    procedure SecretMediaPlayStateChange(ASender: TObject; NewState: Integer);
   private
     { Private-Deklarationen }
   public
@@ -66,46 +61,42 @@ implementation
 
 uses Start, Win, Lose;
 
-procedure TTMain.BtnMusikClick(Sender: TObject);
-begin
-  if AnAus = 0 then
-  begin
-    HintergrundMedia.Pause;
-    Inc(AnAus);
-  end
-  else if AnAus = 1 then
-  begin
-    HintergrundMedia.Play;
-    dec(AnAus);
-  end;
-end;
-
 procedure TTMain.BtnStartClick(Sender: TObject);
 begin
+  BtnStart.Enabled := false;
   Zufallszahl := Random(3) + 1;
   if (TRadioButton(Auswahl.Controls[0]).Checked = false) AND
     (TRadioButton(Auswahl.Controls[1]).Checked = false) AND
     (TRadioButton(Auswahl.Controls[2]).Checked = false) then
   begin
     ShowMessage('Bitte eine Auswahl treffen.');
+    BtnStart.Enabled := true;
     Exit;
   end;
   Countdown;
   Spielablauf;
   Inc(Count);
   if Count = 10 then
+  begin
     if PunktzCPU > PunktzSpieler then
     begin
-      MediaPlayerBackground.Controls.Pause;
+      HintergrundMedia.Notify := false;
+      HintergrundMedia.Wait := false;
+      HintergrundMedia.Pause;
       TMain.Hide;
       TLose.Show;
     end
     else if PunktzCPU < PunktzSpieler then
     begin
-      MediaPlayerBackground.Controls.Pause;
+      HintergrundMedia.Notify := false;
+      HintergrundMedia.Wait := false;
+      HintergrundMedia.Pause;
       TMain.Hide;
       TWin.Show;
-    end;
+    end
+  end
+  else
+    BtnStart.Enabled := true;
 end;
 
 procedure TTMain.FormActivate(Sender: TObject);
@@ -115,7 +106,6 @@ end;
 
 procedure TTMain.FormCreate(Sender: TObject);
 begin
-  MediaPlayerSecret.Hide;
   Stein := TPngImage.Create;
   Titel := TPngImage.Create;
   Background := TJPEGImage.Create;
@@ -149,17 +139,21 @@ begin
   Application.Terminate;
 end;
 
-procedure TTMain.Panel1Click(Sender: TObject);
+procedure TTMain.CheckMusikClick(Sender: TObject);
 begin
-  { MediaPlayerSecret.Show;
-    MediaPlayerBackground.Controls.pause;
-    MediaPlayerSecret.Controls.play;
-  }
-end;
-
-procedure TTMain.Button1Click(Sender: TObject);
-begin
-  Reset;
+  if CheckMusik.Checked = false then
+  begin
+    HintergrundMedia.Notify := false;
+    HintergrundMedia.Wait := false;
+    HintergrundMedia.Pause
+  end
+  else
+  begin
+    HintergrundMedia.Notify := false;
+    HintergrundMedia.Wait := false;
+    HintergrundMedia.Resume
+  end;
+  HintergrundMedia.Notify := true;
 end;
 
 procedure TTMain.Countdown;
@@ -174,6 +168,16 @@ begin
   Application.ProcessMessages;
   Sleep(500);
   LblCountdown.Caption := '';
+end;
+
+procedure TTMain.SecretMediaPlayStateChange(ASender: TObject;
+  NewState: Integer);
+begin
+  if SecretMedia.playState = 8 then
+  begin
+    TMain.Hide;
+    TWin.Show;
+  end;
 end;
 
 procedure TTMain.Spielablauf;
@@ -274,36 +278,37 @@ end;
 
 procedure TTMain.HintergrundMediaNotify(Sender: TObject);
 begin
-  HintergrundMedia.Open;
+  if CheckMusik.Checked = true then
+    HintergrundMedia.AutoRewind := true;
   HintergrundMedia.Play;
   HintergrundMedia.Notify := true;
 end;
 
-procedure TTMain.MediaPlayerBackgroundPlayStateChange(ASender: TObject;
-  NewState: Integer);
+procedure TTMain.Panel1Click(Sender: TObject);
 begin
-  if NewState = 8 then
-    MediaPlayerBackground.Controls.Play;
-end;
-
-procedure TTMain.MediaPlayerSecretPlayStateChange(ASender: TObject;
-  NewState: Integer);
-begin
-  if NewState = 8 then
-  begin
-    TMain.Hide;
-    TWin.Show
+  Panel1.Enabled := false;
+  BtnStart.Enabled := false;
+  HintergrundMedia.Notify := false;
+  HintergrundMedia.Wait := false;
+  HintergrundMedia.Pause;
+  try
+    RS := TResourceStream.Create(HInstance, 'MP4Secret', RT_RCDATA);
+    RS.SaveToFile(TP + 'Secret.mp4');
+  finally
+    RS.Free;
   end;
+  SecretMedia.Visible := true;
+  SecretMedia.URL := TP + 'Secret.mp4';
+  SecretMedia.Controls.Play;
 end;
 
 procedure TTMain.Reset;
 begin
-  MediaPlayerSecret.Hide;
-  MediaPlayerBackground.Hide;
-  MediaPlayerBackground.Controls.Play;
-  TRadioButton(Auswahl.Controls[0]).Checked := false;
-  TRadioButton(Auswahl.Controls[1]).Checked := false;
-  TRadioButton(Auswahl.Controls[2]).Checked := false;
+  SecretMedia.Visible := false;
+  SecretMedia.close;
+  HintergrundMedia.Rewind;
+  HintergrundMedia.Notify := true;
+  BtnStart.Enabled := true;
   LblStatus.Caption := '';
   LblPunktzCPU.Caption := 'Punktzahl: 0';
   LblPunktzSpieler.Caption := 'Punktzahl: 0';

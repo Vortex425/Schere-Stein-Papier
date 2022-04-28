@@ -1,6 +1,7 @@
 object TMain: TTMain
   Left = 0
   Top = 0
+  BorderIcons = [biSystemMenu, biMinimize]
   BorderStyle = bsSingle
   Caption = 'Schere | Stein | Papier'
   ClientHeight = 331
@@ -161,17 +162,18 @@ object TMain: TTMain
     TabOrder = 1
     OnClick = BtnStartClick
   end
-  object Panel1: TPanel
-    Left = 620
-    Top = 252
-    Width = 96
+  object PnlSecret: TPanel
+    Left = 583
+    Top = 200
+    Width = 34
     Height = 13
-    Hint = 'Der Nieser'
+    Hint = 'Supersymbol'
+    HelpType = htKeyword
     BevelOuter = bvNone
     ParentShowHint = False
     ShowHint = True
     TabOrder = 2
-    OnClick = Panel1Click
+    OnClick = PnlSecretClick
   end
   object HintergrundMedia: TMediaPlayer
     Left = 150
@@ -197,7 +199,7 @@ object TMain: TTMain
   end
   object SecretMedia: TWindowsMediaPlayer
     Left = 384
-    Top = 133
+    Top = 128
     Width = 193
     Height = 147
     TabOrder = 5

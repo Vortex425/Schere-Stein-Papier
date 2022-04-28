@@ -82,7 +82,7 @@ object TStart: TTStart
       'Viel Spa'#223'!'
       ''
       'Ach ja ich habe noch ein "Supersymbol" '
-      'versteckt. Wenn du es findest hast du sofort '
+      'verteckt. Wenn du es findest hast du sofort '
       'gewonnen!')
     ParentFont = False
     ScrollBars = ssVertical
