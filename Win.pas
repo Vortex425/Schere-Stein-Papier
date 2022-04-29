@@ -40,8 +40,8 @@ end;
 procedure TTWin.BtnNeustartClick(Sender: TObject);
 begin
   TMain.Reset;
-  TMain.Show;
   TWin.Close;
+  TMain.Show;
 end;
 
 procedure TTWin.FormActivate(Sender: TObject);

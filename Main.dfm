@@ -99,13 +99,13 @@ object TMain: TTMain
     ParentFont = False
   end
   object LblStatus: TLabel
-    Left = 272
-    Top = 72
-    Width = 5
-    Height = 21
+    Left = 216
+    Top = 102
+    Width = 7
+    Height = 25
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
-    Font.Height = -17
+    Font.Height = -21
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
