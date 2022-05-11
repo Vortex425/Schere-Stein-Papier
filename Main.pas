@@ -1,3 +1,5 @@
+// Valentin Groﬂ
+// GNU GENERAL PUBLIC LICENSE
 unit Main;
 
 interface
@@ -63,6 +65,7 @@ uses Start, Win, Lose;
 
 procedure TTMain.BtnStartClick(Sender: TObject);
 begin
+  Randomize;
   BtnStart.Enabled := false;
   Zufallszahl := Random(3) + 1;
   if (TRadioButton(Auswahl.Controls[0]).Checked = false) AND

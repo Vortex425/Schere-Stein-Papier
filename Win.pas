@@ -1,3 +1,5 @@
+//Valentin Groﬂ
+//GNU GENERAL PUBLIC LICENSE
 unit Win;
 
 interface
