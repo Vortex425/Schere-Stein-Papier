@@ -12,4 +12,4 @@ Anschließend kannst du das Spiel neustarten.
 
 Viel Spaß!
 
-***Das Spiel befindent sich noch in der Entwicklungsphase. Eingige Inhalte ändern sich vielleicht im Laufe der Entwicklung.***
+***Das Spiel befindent sich noch in der Entwicklungsphase. Eingige Inhalte ändern sich vielleicht im Verlaufe dieser.***
